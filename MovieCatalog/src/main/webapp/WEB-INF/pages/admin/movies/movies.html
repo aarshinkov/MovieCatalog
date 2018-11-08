@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{templates/contentTemplate}">
+<head>
+    <title th:text="#{title.admin.movies} + ' | ' + #{app.title}"></title>
+</head>
+<body>
+<div layout:fragment="contentDiv">
+    <p>Movies page</p>
+    <a th:href="@{/admin/movies/add}">Add movie</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{templates/contentTemplate}">
+<head>
+    <title th:text="#{title.admin.users} + ' | ' + #{app.title}"></title>
+</head>
+<body>
+<div layout:fragment="contentDiv">
+    <p>Users page</p>
+    <a th:href="@{/admin/users/add}">Add user</a>
+</div>
+</body>
+</html>
