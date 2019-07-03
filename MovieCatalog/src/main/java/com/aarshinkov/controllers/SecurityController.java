@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.security.Principal;
 
 @Controller
-public class SecurityConfig {
+public class SecurityController {
 
     @Autowired
     public UsersRepository usersRepo;
